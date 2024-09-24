@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar h2 {
+    font-size: 60px;
+    margin-left: 20px;
+    color: #f5f5dc;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dogpaw {
+    width: 90px;
+}
+
+/* Desktop navigation links */
+.nav-links ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f5f5f5;
+    padding: 0.5rem 1.5rem;
+    font-size: 23px;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a5d6a7;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #ecf0f1; /* Light color for contrast */
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect with subtle underline and color shift */
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #a5d6a7; 
+    left: 50%;
+    bottom: 0;
+    transition: width 0.4s ease, left 0.4s ease;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .nav-links a:hover {
+    color: #a5d6a7; /* Color shift to match accent */
+  }
+
+/* Sticky navigation styles */
+.scroll-nav {
+    background-color: #34495e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.scroll-nav .title h2 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #f39c12;
+    transition: transform 0.3s ease;
+}
+
+.scroll-nav .title h2:hover {
+    transform: scale(1.15);
+    color: #f1c40f;
+}
+
+.scroll-nav a {
+    color: #ecf0f1;
+    padding: 0.5rem 1.5rem;
+}
+
+.scroll-nav a {
+    text-decoration: none;
+    color: #ecf0f1; /* Light color for contrast */
+    font-size: 1.3rem;
+    padding: 0.5rem 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect with subtle underline and color shift */
+  .scroll-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #f39c12;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.4s ease, left 0.4s ease;
+  }
+  
+  .scroll-nav a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  .scroll-nav a:hover {
+    color:#f39c12;  /* Color shift to match accent */
+  }
+
+
+  
+ 
+/* Hide and show mobile menu */
+.menu-icon {
+    display: none;
+}
+
+/* Animation for menu icon (rotation effect) */
+.menu-icon.open {
+    transform: rotate(0deg); /* You can adjust this angle */
+    transition: transform 0.3s ease;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 840px) {
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -200px; /* Initially off the screen */
+        width: 200px;
+        height: 100vh;
+        background: #34495e;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.4s ease;
+    }
+
+    .nav-links ul {
+        display: block;
+        padding-top: 5px;
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 30px;
+        position: fixed;
+        right: 20px;
+        top: 20px;
+        z-index: 1001;
+        transition: transform 0.3s ease;
+    }
+
+    /* Hide and show mobile menu */
+    .hide-mobile-menu {
+        right: -200px; /* Hide menu off-screen */
+    }
+
+    .show-mobile-menu {
+        right: 0; /* Bring menu into view */
+    }
+}

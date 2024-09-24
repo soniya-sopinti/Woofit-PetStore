@@ -1,0 +1,454 @@
+.about{
+    background:url('../../src/assets/dog-paw3.jpeg');
+    background-position: center;
+    
+    background-repeat: repeat;
+    margin-top:60px;
+}
+
+.overlay{
+    background-color: #F5F5DC;
+    height:200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+.overlay h2{
+    color:#3E2723;
+    margin-top:10px;
+    padding-top:40px 10px;
+    font-family: raleway;
+    font-size: 3rem;
+}
+.overlay p{
+    color:black;
+    padding-bottom: 60px;
+    padding-top:20px;
+    font-size: 1.5rem;
+    font-family: lato;
+  }
+  .contain{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+.contain p{
+    background-color:#F5F5DC;
+    width:550px;
+    margin-top:80px;
+    border-radius: 20px;
+    padding:20px;
+    line-height: 0.8cm;
+    font-size: 1.3rem;
+    color:#4e4a49;
+    font-family:lato;
+    
+}  
+
+
+
+.images {
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.images img{
+    width:250px;
+    height:250px;
+    border-radius: 15px;
+}
+.image{
+    position: relative;
+}
+.caption{
+    border-radius:10px;
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background:rgba(92, 43, 41, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color:white;
+    cursor: pointer;
+    font-family: lato;
+    font-weight: bold;
+    opacity : 0;
+    padding-top:30%;
+    padding-bottom: 50px;
+   
+}
+
+.caption img{
+   width:150px;
+   margin-bottom: 30px;
+   padding:10px;
+}
+.image:hover .caption{
+    opacity: 1;
+}
+
+.our-values{
+    color:rgb(60, 43, 38) ;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:60px 0px;
+}
+
+
+
+.our-team{
+    color:#3E2723;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:60px 0px;
+}
+.team{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.team .team-desc{
+    width:500px;
+    margin-top:100px;
+    font-size: 1.3rem;
+    font-family: lato;
+    background-color:#F5F5DC;
+    color:#4e4a49;
+    padding:20px;
+    padding-bottom: -15px;
+    line-height: 0.8cm;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+.team-images{
+    display: flex;
+   gap:10px;
+   margin-left:30px;
+}
+.team-profile img{
+    width:180px;
+}
+.team-profile{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+/* VideoComponent.css */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top:50px;
+  }
+  
+  video {
+    border: 2px solid #F5F5DC;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* card component */
+  /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap onto new rows if there's not enough space */
+    justify-content: space-between; /* Distribute space between cards */
+    margin: 40px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column; /* To handle content within the card */
+    width: 30%; /* Three cards per row */
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto; /* Keeps the image responsive */
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.card-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Modal Styling */
+.modal {
+    
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Smooth fade-in effect */
+}
+
+.modal.active {
+    display: flex; /* Show modal when active */
+    animation: fadeIn 0.5s forwards; /* Start fade-in */
+}
+
+.modal.hidden {
+    animation: fadeOut 0.5s forwards; /* Start fade-out */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    max-width: 600px;
+    position: relative;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.modal-content h2{
+    font-size:2.5rem;
+}
+.modal-content li{
+    list-style: none;
+    padding-top:15px;
+    font-size: 1.3rem;
+}
+.modal-content h2 img{
+    width:90px;
+
+}
+
+.modal-body {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ff0000;
+}
+
+
+  /* media queries*/
+
+  @media (max-width:850px){
+    .overlay h2{
+        font-size:2.5rem;
+    }
+    .overlay p{
+        font-size: 1.2rem;
+    }
+     
+    .contain p{
+    background-color:#F5F5DC;
+    width:500px;
+    padding:15px;
+   font-size: 1rem; 
+}  
+.contain .video-container{
+    width:500;
+}
+.modal-content h2{
+    font-size:2rem;
+}
+.modal-content li{
+    font-size:1rem;
+}
+
+.modal-content h2 img{
+    width:75px;
+
+}
+    .team-profile img{
+        width:120px;
+    }
+    .team .team-desc{
+        width:300px;
+        margin-top:100px;
+        font-size: 1rem;
+        font-family: lato;
+        background-color:#F5F5DC;
+        color:#4e4a49;
+        padding:10px;
+        padding-bottom: -15px;
+        line-height: 0.8cm;
+        border-radius: 10px;
+        margin-bottom: 100px;
+    }
+  }
+  @media (max-width:650px){
+    .overlay{
+        height:100px;
+    }
+    .overlay h2{
+        font-size:2rem;
+        padding-top:20px;
+        margin-bottom: -10px;
+    }
+    .overlay p{
+        font-size: 1rem;
+    }
+   .contain{
+    display: flex;
+    flex-direction: column;
+   }  
+    .contain p{
+    background-color:#F5F5DC;
+    width:450px;
+    padding:15px;
+   font-size: 1rem; 
+   margin-left:10px;
+}  
+.contain .video-container{
+    width:500;
+}
+.card {
+    display: flex;
+    flex-direction: column; /* To handle content within the card */
+    width:90%; /* Three cards per row */
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    margin-left:30px;
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.modal-content{
+    width:500px;
+}
+.modal-content h2{
+    font-size:2rem;
+}
+.modal-content li{
+    font-size:1rem;
+}
+
+.modal-content h2 img{
+    width:75px;
+
+}
+    .team-profile img{
+        width:170px;
+    }
+    .team-images{
+        margin-left:35px;
+    }
+    .team{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .team .team-desc{
+        width:500px;
+        margin-top:100px;
+        font-size: 1.2rem;
+        font-family: lato;
+        background-color:#F5F5DC;
+        color:#4e4a49;
+        padding:10px;
+        padding-bottom: -15px;
+        line-height: 0.8cm;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        margin-left:50px;
+    }
+  }
+  @media(max-width:480px){
+    .overlay h2{
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+    .contain p{
+        margin-right: 10px;
+    }
+    .team-images{
+        margin-left:15px;
+    }
+    .team-profile img{
+        width:140px;
+    }
+    .team .team-desc{
+        margin-left:11px;
+        font-size:0.9rem;
+        width:450px;
+    }
+  }

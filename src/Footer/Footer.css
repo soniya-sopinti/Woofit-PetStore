@@ -1,0 +1,26 @@
+.footer{
+    margin :10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px 0;
+    border-top:1px solid #6d4a49;
+}
+.footer ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left:20px;
+    font-size:15px;
+}
+.footer p{
+    font-size:15px;
+}
+@media(max-width:480px){
+   .footer p{
+    font-size:12px;
+   }
+   .footer ul li{
+    font-size:12px;
+   }
+   
+}
