@@ -202,6 +202,7 @@
         right: 0; /* Bring menu into view */
     }
 }
+
 @media(max-width:375px){
     .title h2{
         font-size:2.5rem;
