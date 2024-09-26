@@ -202,3 +202,53 @@
         right: 0; /* Bring menu into view */
     }
 }
+@media(max-width:375px){
+    .title h2{
+        font-size:2.5rem;
+    }
+    .title img{
+        width:60px;
+        margin-left:-20px;
+    }
+    .scroll-nav .title h2{
+        font-size: 2.5rem;
+    }
+    .menu-icon{
+        width:25px;
+    }
+    .title{
+        margin-top:-10px;
+    }
+    .scroll-nav{
+        height:60px;
+    }
+    .scroll-nav .title{
+        padding-top:20px;
+    }
+}
+
+@media(max-width:320px){
+    .title h2{
+        font-size:2rem;
+    }
+    .title{
+        margin-top:-30px;
+    }
+    .title img{
+        width:55px;
+        margin-left:-20px;
+    }
+    
+    .scroll-nav .title h2{
+        font-size: 2rem;
+    }
+    .menu-icon{
+        width:20px;
+        top:20px;
+
+    }
+    .scroll-nav{
+        height:70px;
+        padding-top:20px;
+    }
+}

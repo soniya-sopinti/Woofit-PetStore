@@ -160,3 +160,36 @@ html,body{
         width:150px;
     }
 }
+@media(max-width:375px){
+
+.container img {
+    width:120px;
+    margin:10px;
+}
+.container p{
+    width:200px;
+    margin-bottom: 10px;
+}
+.seconds .feature-content{
+    padding-right: 60px;
+}
+
+.seconds .feature{
+  padding-left:-50px;
+}
+
+}
+@media(max-width:320px){
+    .container img{
+        width:100px;
+       
+    }
+    .container{
+        margin-right: -10px;
+    }
+    .container p{
+        width:150px;
+        padding:5px;
+        margin-right:5px;
+    }
+}

@@ -452,3 +452,38 @@
         width:450px;
     }
   }
+  @media(max-width:375px){
+    .overlay p{
+        font-size:0.8rem;
+    }
+    .contain p{
+        width:360px;
+    }
+    .team-profile img{
+        width:100px;
+    }
+    .team-desc p{
+      
+        margin-left:-5px;
+       
+    }
+    .team .team-desc{
+        width:320px;
+        margin-right:-10px;
+    }
+  }
+  @media(max-width:320px){
+    .team .team-desc{
+        width:290px;
+        margin-left:5px;
+    }
+    .contain p{
+        width:290px;
+    }
+    .our-values{
+        font-size:2.2rem;
+    }
+    .our-team{
+        font-size:2.2rem;
+    }
+  }

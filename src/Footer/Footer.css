@@ -24,3 +24,11 @@
    }
    
 }
+@media(max-width:320px){
+    .footer ul li {
+        font-size: 11px;
+    }
+    .footer p{
+        font-size:11px;
+       }
+}

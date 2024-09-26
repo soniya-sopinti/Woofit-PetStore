@@ -68,7 +68,7 @@ function Services () {
         <>
 <div className="services">
             <div className="services-title">
-                <h2># Our Pet Care Services <img className='paw' src={paw} />
+                <h2># Our Services <img className='paw' src={paw} />
                 </h2>
                <p>We offer a variety of services tailored to keep your pets happy, healthy,
                  and well-groomed. Explore our services below!</p>

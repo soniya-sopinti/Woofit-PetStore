@@ -89,3 +89,22 @@
     width:400px;
    }
  }
+ @media(max-width:375px){
+    .contact .contact-col form input{
+        width:330px;
+    }
+    .contact .contact-col form label{
+        font-size:1rem;
+    }
+ }
+ @media(max-width:320px){
+    .contact .contact-col form input{
+        width:280px;
+    }
+    .contact .contact-col form label{
+        font-size:1rem;
+    }
+    .submit-btn{
+        font-size: 14px;
+    }
+ }
